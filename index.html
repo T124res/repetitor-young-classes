@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Репетитор молодших класів</title>
-    <!-- Підключення CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"> <!-- Підключення CSS -->
 </head>
 <body>
-    <!-- Ваш контент -->
+    <!-- Головна сторінка -->
     <header id="home">
         <h1 class="main-title">Репетитор молодших класів</h1>
-        <div id="globe"></div>
+        <div id="globe"></div> <!-- Анімація глобусу -->
         <nav>
             <ul class="nav-buttons">
                 <li><a href="#services">Послуги</a></li>
@@ -21,9 +19,48 @@
             </ul>
         </nav>
     </header>
-    <!-- Інші секції -->
-    <script src="script.js"></script>
-    <script src="script.js"></script>
 
+    <!-- Секція "Послуги" -->
+    <section id="services">
+        <h2>Послуги та ціни</h2>
+        <p>Детальна інформація про послуги та їх вартість.</p>
+        <button onclick="scrollToHome()">На головну</button>
+    </section>
+
+    <!-- Секція "Про мене" -->
+    <section id="about">
+        <h2>Про мене</h2>
+        <p>Розкажіть про свій досвід, кваліфікацію та підхід до навчання.</p>
+        <button onclick="scrollToHome()">На головну</button>
+    </section>
+
+    <!-- Секція "Стиль викладання" -->
+    <section id="teaching-style">
+        <h2>Стиль викладання</h2>
+        <p>Опис ваших методів навчання та підходів до учнів.</p>
+        <button onclick="scrollToHome()">На головну</button>
+    </section>
+
+    <!-- Контактна інформація -->
+    <footer id="contact">
+        <h2>Контактна інформація</h2>
+        <p>Email: your-email@example.com</p>
+        <p>Телефон: +38 (XXX) XXX-XX-XX</p>
+        <h3>Залиште заявку</h3>
+        <form id="contact-form">
+            <label for="name">Ваше ім'я:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Ваш email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Ваше повідомлення:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit">Надіслати</button>
+        </form>
+    </footer>
+
+    <script src="script.js"></script> <!-- Підключення JavaScript -->
 </body>
 </html>
