@@ -4,66 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Репетитор молодших класів</title>
-    <link rel="stylesheet" href="style.css"> <!-- Підключення CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Головна сторінка -->
-    <header id="home">
-        <h1 class="main-title">Репетитор молодших класів</h1>
-        <div id="globe"></div> <!-- Анімація глобусу -->
-        <nav>
-            <ul class="nav-buttons">
-                <li><a href="#services">Послуги</a></li>
-                <li><a href="#about">Про мене</a></li>
-                <li><a href="#teaching-style">Стиль викладання</a></li>
-            </ul>
-        </nav>
+    <header class="header">
+        <div class="container">
+            <h1 class="main-title">Репетитор молодших класів</h1>
+            <p class="subtitle">Допомагаємо дітям вчитися легко та із задоволенням!</p>
+            <nav>
+                <ul class="nav-buttons">
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="services.html">Послуги</a></li>
+                    <li><a href="about.html">Про мене</a></li>
+                    <li><a href="contact.html">Контакти</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-
-    <!-- Секція "Послуги" -->
-    <section id="services">
-        <h2>Послуги та ціни</h2>
-        <p>Детальна інформація про послуги та їх вартість.</p>
-        <button onclick="scrollToHome()">На головну</button>
-    </section>
-
-    <!-- Секція "Про мене" -->
-    <section id="about">
-        <h2>Про мене</h2>
-        <p>Розкажіть про свій досвід, кваліфікацію та підхід до навчання.</p>
-        <button onclick="scrollToHome()">На головну</button>
-    </section>
-
-    <!-- Секція "Стиль викладання" -->
-    <section id="teaching-style">
-        <h2>Стиль викладання</h2>
-        <p>Опис ваших методів навчання та підходів до учнів.</p>
-        <button onclick="scrollToHome()">На головну</button>
-    </section>
-
-    <!-- Контактна інформація -->
-    <footer id="contact">
-        <h2>Контактна інформація</h2>
-        <p>Email: your-email@example.com</p>
-        <p>Телефон: +38 (XXX) XXX-XX-XX</p>
-        <h3>Залиште заявку</h3>
-        <form id="contact-form">
-            <label for="name">Ваше ім'я:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Ваш email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Ваше повідомлення:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-            
-            <button type="submit">Надіслати</button>
-        </form>
-    </footer>
-
-    <script src="script.js"></script> <!-- Підключення JavaScript -->
+    <main>
+        <section class="welcome-section">
+            <h2>Ласкаво просимо!</h2>
+            <p>На цьому сайті ви знайдете все, що потрібно для ефективного навчання ваших дітей.</p>
+        </section>
+    </main>
 </body>
 </html>
-<link rel="stylesheet" href="style.css">
-<script src="script.js"></script>
-    
