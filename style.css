@@ -1,26 +1,23 @@
-/* Загальні стилі */
 body {
     font-family: 'Arial', sans-serif;
+    background-color: #f7f3e9;
     margin: 0;
     padding: 0;
-    background-color: #f7f3e9;
-    color: #333;
 }
 
-header {
+/* Заголовок */
+.header {
+    background-color: #ffebcd;
     text-align: center;
-    padding: 50px 20px;
-    background: #ffebcd;
+    padding: 20px 0;
 }
 
 .main-title {
-    font-size: 3em;
-    font-style: italic;
     color: #ff7e79;
-    animation: fadeIn 2s ease-in-out;
+    font-size: 2.5em;
 }
 
-/* Навігаційні кнопки */
+/* Навігація */
 .nav-buttons {
     list-style: none;
     padding: 0;
@@ -34,69 +31,21 @@ header {
 .nav-buttons a {
     text-decoration: none;
     color: #4b6584;
-    font-weight: bold;
     font-size: 1.2em;
 }
 
-/* Розділи */
+/* Секції */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
 section {
     padding: 50px 20px;
     text-align: center;
-    background: #fef9f3;
+    background: #fff;
     margin: 20px auto;
     border-radius: 10px;
-    width: 80%;
-}
-
-button {
-    background-color: #6a89cc;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #4a69bd;
-}
-
-/* Контактна форма */
-form {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-form input, form textarea {
-    width: 80%;
-    margin-bottom: 15px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-form button {
-    width: auto;
-}
-
-/* Анімації */
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-#globe {
-    width: 200px;
-    height: 200px;
-    margin: 20px auto;
-    background: url('https://upload.wikimedia.org/wikipedia/commons/7/76/Globe.svg') no-repeat center;
-    background-size: cover;
-    animation: rotate 5s linear infinite;
-}
-
-@keyframes rotate {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
