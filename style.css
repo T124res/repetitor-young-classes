@@ -49,3 +49,27 @@ section {
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-buttons li {
+    margin: 0 15px;
+}
+
+.nav-buttons a {
+    text-decoration: none;
+    color: #ff7f50;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-buttons a:hover {
+    color: #ff4500;
+}
+
